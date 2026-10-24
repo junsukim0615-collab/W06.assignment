@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Week 6 - Verify Task 1",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/w06-routing/task1_linkstate.py",
+            "args": ["--verify"],
+            "console": "internalConsole",
+            "cwd": "${workspaceFolder}/w06-routing"
+        }
+    ]
+}
