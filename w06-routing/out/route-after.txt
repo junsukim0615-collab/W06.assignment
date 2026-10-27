@@ -1,0 +1,58 @@
+===== r1 =====
+Codes: K - kernel route, C - connected, S - static, R - RIP,
+       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,
+       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,
+       f - OpenFabric,
+       > - selected route, * - FIB route, q - queued, r - rejected, b - backup
+       t - trapped, o - offload failure
+
+O   10.255.6.1/32 [110/0] is directly connected, lo, weight 1, 00:00:21
+O>* 10.255.6.2/32 [110/20] via 172.19.0.2, eth0, weight 1, 00:00:06
+O>* 10.255.6.3/32 [110/10] via 172.19.0.2, eth0, weight 1, 00:00:17
+O>* 172.18.0.0/16 [110/20] via 172.19.0.2, eth0, weight 1, 00:00:06
+O   172.19.0.0/16 [110/10] is directly connected, eth0, weight 1, 00:03:11
+O>* 172.20.0.0/16 [110/30] via 172.19.0.2, eth0, weight 1, 00:00:06
+
+Neighbor ID     Pri State           Up Time         Dead Time Address         Interface                        RXmtL RqstL DBsmL
+3.3.3.3           1 Full/DR         2m21s             38.760s 172.19.0.2      eth0:172.19.0.3                      1     0     0
+
+
+===== r2 =====
+Codes: K - kernel route, C - connected, S - static, R - RIP,
+       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,
+       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,
+       f - OpenFabric,
+       > - selected route, * - FIB route, q - queued, r - rejected, b - backup
+       t - trapped, o - offload failure
+
+O>* 10.255.6.1/32 [110/20] via 172.18.0.3, eth1, weight 1, 00:00:06
+O   10.255.6.2/32 [110/0] is directly connected, lo, weight 1, 00:00:19
+O>* 10.255.6.3/32 [110/10] via 172.18.0.3, eth1, weight 1, 00:00:17
+O   172.18.0.0/16 [110/10] is directly connected, eth1, weight 1, 00:03:12
+O>* 172.19.0.0/16 [110/20] via 172.18.0.3, eth1, weight 1, 00:00:06
+O   172.20.0.0/16 [110/10] is directly connected, eth0, weight 1, 00:03:12
+
+Neighbor ID     Pri State           Up Time         Dead Time Address         Interface                        RXmtL RqstL DBsmL
+1.1.1.1           1 Full/Backup     2m27s             28.243s 172.20.0.3      eth0:172.20.0.2                      1     0     0
+3.3.3.3           1 Full/DR         2m31s             38.042s 172.18.0.3      eth1:172.18.0.2                      0     0     0
+
+
+===== r3 =====
+Codes: K - kernel route, C - connected, S - static, R - RIP,
+       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,
+       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,
+       f - OpenFabric,
+       > - selected route, * - FIB route, q - queued, r - rejected, b - backup
+       t - trapped, o - offload failure
+
+O>* 10.255.6.1/32 [110/10] via 172.19.0.3, eth0, weight 1, 00:00:22
+O>* 10.255.6.2/32 [110/10] via 172.18.0.2, eth1, weight 1, 00:00:20
+O   10.255.6.3/32 [110/0] is directly connected, lo, weight 1, 00:00:18
+O   172.18.0.0/16 [110/10] is directly connected, eth1, weight 1, 00:03:13
+O   172.19.0.0/16 [110/10] is directly connected, eth0, weight 1, 00:03:13
+O>* 172.20.0.0/16 [110/20] via 172.18.0.2, eth1, weight 1, 00:00:07
+
+Neighbor ID     Pri State           Up Time         Dead Time Address         Interface                        RXmtL RqstL DBsmL
+1.1.1.1           1 Full/Backup     2m22s             37.607s 172.19.0.3      eth0:172.19.0.2                      0     0     0
+2.2.2.2           1 Full/Backup     2m32s             37.242s 172.18.0.2      eth1:172.18.0.3                      0     0     0
+

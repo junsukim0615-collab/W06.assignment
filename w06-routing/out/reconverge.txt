@@ -1,0 +1,10 @@
+{
+  "link_down_seconds": 2.8044891000026837,
+  "restore_seconds": 13.546408499998506,
+  "cost_change_seconds": 2.716062699968461,
+  "measured_at": "2026-10-27T15:17:58.906202+09:00",
+  "method": "All six remote loopback routes must have the expected next hop in two consecutive polls; time records completion of first matching poll, including command and polling overhead.",
+  "failure_mode": "Local administrative link down: the local router can detect this immediately rather than waiting for its dead timer.",
+  "hello_seconds": 10,
+  "dead_seconds": 40
+}

@@ -1,0 +1,9 @@
+
+=== Task 2
+  ok   [2] A1 three traceroutes  - 2,971 bytes
+  ok   [2] B1 tables before the cut  - 3,733 bytes
+  ok   [2] B3 tables after the cut  - 3,389 bytes
+  ok   [2] B4 measured reconvergence time  - 567 bytes
+  ok   [2] traceroute output has hops  - 48 hop lines
+
+  5 passed, 0 failed, 0 skipped
