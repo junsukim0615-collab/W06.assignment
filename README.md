@@ -81,3 +81,6 @@ python task3_extra_checks.py
 - [구현 코드](w06-routing/task3_reconverge.py), [과제 요구사항](w06-routing/task3.md)
 
 제공 벤치마크는 yours에만 정답 비교 시간을 포함한다. 단순 wall time 비교의 한계와 별도 비교 결과를 observation에 설명했다. VS Code에서는 `Week 6 - Benchmark Task 3`를 선택하고 F5로 실행한다.
+
+## 학교망 추가 측정
+2026-10-27 학교망 실측 및 APNIC 주소 등록 대조를 추가했다. [분석](w06-routing/out/campus-analysis.md), [세 대상 원본](w06-routing/out/traceroute-campus.txt), [국내 최초 추적](w06-routing/out/traceroute-campus-domestic-initial.txt). 정확한 캠퍼스 경계와 해저 케이블은 확정하지 못했으며, 관측 근거와 한계를 구분했다.

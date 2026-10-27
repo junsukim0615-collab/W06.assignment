@@ -67,3 +67,6 @@
 - R5: 제공 벤치마크 출력은 baseline 1.20초, yours 1.54초였다. 단, harness는 yours에만 매 이벤트 기준 SPF 검증을 추가하고 그 시간을 wall time에 포함한다. 따라서 이 숫자로 개선 구현 자체가 더 느리다고 결론 내리면 안 된다. 별도 도구에서 두 구현 모두 검증 없이 측정하니 baseline 1.16초, yours 0.39초였다. 단일 실행의 참고값이며 실환경의 수렴 시간과 동일하지 않다. 일반적으로 추가 상태 관리와 Python 딕셔너리·집합 처리가 비용을 만들지만, 실 라우터에서 불필요한 SPF를 줄이면 제어 평면 CPU 부담을 줄이는 데 도움이 될 수 있다. 메모리 비용, 최악 상황의 변경 빈도, 정확성 및 실제 장비 성능까지 검증한 뒤 선택해야 한다.
 
 실행: `python bench.py --yours`, `python test_tasks.py --task 3`, `python task3_extra_checks.py`. 결과는 `task3-benchmark.txt`, `task3-tests.txt`, `task3-extra-checks.txt`에 저장했다. 제공 검사 결과는 2 passed, 0 failed, 1 skipped이며 skipped는 R5의 사람 평가 항목이다.
+
+## 학교망 후속 관측
+2026-10-27 학교망에서 다시 측정했다. 앞선 Task 2 Part A는 최초 교외 측정이며, 학교 측정 결과 및 A2–A5 보완은 [campus-analysis.md](campus-analysis.md)를 참조한다.

@@ -1,0 +1,64 @@
+Measured: 2026-10-27T20:22:51.945075+09:00
+
+Network: home/external, confirmed by user; not campus
+
+===== www.stanford.edu (exit 0) =====
+
+Tracing route to stanford.netlifyglobalcdn.com [15.197.167.90]
+over a maximum of 30 hops:
+
+  1     *        *        1 ms  192.168.0.1 
+  2     *        *        *     Request timed out.
+  3     7 ms     5 ms     3 ms  61.78.45.77 
+  4   104 ms     5 ms    43 ms  112.188.145.61 
+  5     *        *        *     Request timed out.
+  6     *        *        *     Request timed out.
+  7     5 ms     7 ms     5 ms  112.191.117.49 
+  8     6 ms     5 ms     5 ms  112.188.242.181 
+  9     *        *        *     Request timed out.
+ 10     *        *        *     Request timed out.
+ 11     *        *        *     Request timed out.
+ 12     *        *        *     Request timed out.
+ 13     *        *        *     Request timed out.
+ 14     *        *        *     Request timed out.
+ 15     *        *        *     Request timed out.
+ 16    25 ms    11 ms     8 ms  afa7f374f51cc8991.awsglobalaccelerator.com [15.197.167.90] 
+
+Trace complete.
+
+
+===== www.mit.edu (exit 0) =====
+
+Tracing route to e9566.dscb.akamaiedge.net [104.76.65.189]
+over a maximum of 30 hops:
+
+  1     6 ms     2 ms     5 ms  192.168.0.1 
+  2     *        *        *     Request timed out.
+  3     6 ms     3 ms     2 ms  61.78.45.77 
+  4    69 ms     9 ms    14 ms  112.188.145.69 
+  5     *        *        *     Request timed out.
+  6     *        *        *     Request timed out.
+  7    10 ms     6 ms     6 ms  112.191.117.7 
+  8    22 ms    16 ms   122 ms  112.189.24.171 
+  9    14 ms     7 ms     8 ms  211.47.23.198 
+ 10     8 ms     5 ms     6 ms  a104-76-65-189.deploy.static.akamaitechnologies.com [104.76.65.189] 
+
+Trace complete.
+
+
+===== www.berkeley.edu (exit 0) =====
+
+Tracing route to www.berkeley.edu [141.193.213.20]
+over a maximum of 30 hops:
+
+  1     2 ms     2 ms     3 ms  192.168.0.1 
+  2     *        *        *     Request timed out.
+  3     6 ms     3 ms     3 ms  61.78.45.77 
+  4    85 ms     9 ms    14 ms  112.188.145.197 
+  5     *        *        *     Request timed out.
+  6     *        *        *     Request timed out.
+  7    23 ms     *        *     218.145.42.206 
+  8    14 ms     9 ms     8 ms  141.101.82.25 
+  9    11 ms     9 ms     9 ms  141.193.213.20 
+
+Trace complete.
