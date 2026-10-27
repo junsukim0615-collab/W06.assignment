@@ -2,6 +2,14 @@
 
 컴퓨터네트워크 6주차 Task 1·2·3 제출물.
 
+## 최종 제출 점검
+
+- [관찰 요약](w06-routing/out/observation.md): 과제별 2–3줄. [전체 상세 답변](w06-routing/out/answers-detailed.md)에 요구사항별 근거 보존.
+- 필수 파일명인 [out/bench.txt](w06-routing/out/bench.txt)를 포함해 6개 필수 산출물을 모두 제출했다.
+- `python w06-routing/test_tasks.py`: [9 passed, 0 failed, 1 skipped](w06-routing/out/all-tests.txt). skipped는 사람이 평가하는 R5 설명 항목이다.
+- `python check.py w06`: [제출 형식 검사 통과](w06-routing/out/submission-check.txt).
+- Task 2의 캠퍼스 경계·대양 횡단 케이블은 이번 경로 추적만으로 식별하지 못했다. 이는 문서에 명시한 관측 한계이며 자동 검사 통과가 해당 사실을 입증하는 것은 아니다.
+
 ## Task 1
 
 Dijkstra 최단 비용 및 다음 홉 계산을 구현했다. 제공 검사 2개 통과, 도달 불가능한 노드·고립 노드·링크 단절 추가 확인 완료.
