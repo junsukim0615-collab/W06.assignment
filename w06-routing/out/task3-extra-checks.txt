@@ -1,0 +1,4 @@
+PASS: 4000 extra events, including disconnected graphs and equal costs
+Timing both implementations without reference checks:
+  baseline       SPF runs  1001   wall   1.16s
+  yours          SPF runs   363   wall   0.39s

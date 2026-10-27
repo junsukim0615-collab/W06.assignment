@@ -1,0 +1,9 @@
+
+=== Task 3
+  baseline       SPF runs  1001   wall   1.03s
+  yours          SPF runs   363   wall   1.63s   wrong after 0 event(s)
+  ok   [3] R3 table correct after every event  - 0 wrong
+  ok   [3] R4 fewer SPF runs  - 64% avoided
+ skip  [3] R5 wall-time argument in observation.md  - graded by a human
+
+  2 passed, 0 failed, 1 skipped
